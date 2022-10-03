@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* body */
+body{
+    background: url('../icons/bowl.jpg')no-repeat center center/cover ;
+}
+/* logo  */
+#logo img{
+    width: 20%;
+    
+}
+#logo{
+    width: 40%;
+    margin: 10px 14px;
+}
+/* nevigationbar */
+#navebar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navebar ul{
+    display: flex;
+    
+}
+#navebar::before{
+    content:"" ;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navebar ul li{
+    margin: 5px 2px;
+    padding: 3px 4px;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navebar ul li a{
+    color: white    ;
+    margin: 5px 2px;
+    padding: 3px 22px ;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navebar ul li a:hover{
+    color: black ;
+   background-color: white;
+}
+/* home section */
+#home{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content:"" ;
+    background: url("../icons/italian.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 83%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    
+}
+/* services section */
+#services{
+    display: flex;
+    }
+#services .box{
+    padding: 34px;
+    margin: 25px 6px;
+    border-radius: 28px;
+    border: 2px solid brown;
+    background-color: rgba(255, 255, 255, 0.871);
+}
+#services .box img{
+    height: 160px;
+}
+
+#services .box p{
+    
+    font-family: 'Bree serif' , serif;
+}
+ /* clint section */
+    #clients-section{
+        /* height: 344px; */
+        position: relative;
+        
+    }
+    #clients-section::before{
+        content: "";
+        position: absolute;
+        background: url('../icons/pizza2.jpg') no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        /* opacity: 0.4; */
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .clients-items{
+        margin: 23px;
+        padding: 32px;
+       }
+      #clients img{
+        height: 68px;
+      }
+      /* contect-section */
+      #contact{
+        position: relative;
+
+      }
+      #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.2;
+        background: url('../icons/sugar.jpg') no-repeat center center/cover;;
+      }
+      #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+      }
+      #contact-box input,
+      #contact-box textarea{
+          width: 100%;
+          padding: 0.5rem;
+          border-radius: 9px;
+          font-size: 1.1rem;
+      }
+      #contact-box form{
+        width: 40%;
+        
+      }
+      #contact-box label{
+        font-size: 1.3rem;
+        font-family: 'Bree serif' , serif;
+      }
+footer{
+    background-color: black;
+    color: antiquewhite;
+    padding: 9px 20px;
+}
+
+/* utility classis */
+/* ccs reset */
+
+.m-primary{
+    font-size: 4rem;
+    padding: 10px;
+    font-family: 'Bree serif' , serif;
+}
+.h-secondary{
+    font-family: 'Bree serif' , serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 29px;
+    border: 2px solid white;
+    background-color: rgb(231, 186, 50);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: black ;
+    background-color: rgb(234, 27, 27);
+}
+.center{
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: 'Bree serif' , serif;
+}
